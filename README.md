@@ -1,2 +1,5 @@
-# ignite
- Repository for Replica 2 event
+# Team Ignite
+Team members:
+- Kunal
+- Nepal
+- Jatin
