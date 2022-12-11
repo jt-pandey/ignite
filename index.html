@@ -17,20 +17,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jatin.css">
 </head>
 
-<body style="background-image:  url('data/Replica\ 2.0/new.jpg');">
+<body style="background-image:  url('data/Replica\ 2.0/new.jpg');" onload="preload()">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">$('#bologna-list a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+</script>
+<!-- <script>
+  function preLoad() {
+  a1 = new Image; a1.src = 'data/Replica\ 2.0/camera-retro.png';  
+  a2 = new Image; a2.src = 'data/Replica\ 2.0/pen-nib.png';
+  a3 = new Image; a3.src = 'data/Replica\ 2.0/car.png';
+}
+function im(image) {
+  document.getElementById(image[0]).src = eval(image + ".src")
+}
+</script> -->
 
   <div class="heading-lines"><strong>
-      <h1 >Take the hassle out of icons in your </h1>
+      <h1>Take the hassle out of icons in your </h1>
       <div class="orange">
         <h1>designs.</h1>
     </strong>
   </div>
-  <div class="h2"><strong>Font Awesome</strong> is the Internet's icon library and toolkit, used by millions of designers,
+  <div class="h2"><strong>Font Awesome</strong> is the Internet's icon library and toolkit, used by millions of
+    designers,
     developers, and content creators.</div>
   <button type="button" style="box-shadow:  5px 10px black; margin: 1em;font-family: monospace;border-radius: .8em;"
     class="btn btn-light btn-lg"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="earth-americas"
@@ -57,93 +72,147 @@
   </div>
   <div class="grid text-center" style="background-color: white; margin: 0em , 2em, 0em 2em;">
     <div class="g-col-6" style="display: inline-block;">
-      <div class="m-4">
-        <div class="card text-center">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs" id="myTab">
-              <li class="nav-item">
-                <a href="#ICON" class="nav-link active" data-bs-toggle="tab">ICON</a>
-              </li>
-              <li class="nav-item">
-                <a href="#STYLE" class="nav-link" data-bs-toggle="tab">STYLE</a>
-              </li>
-              <li class="nav-item">
-                <a href="#COLOR" class="nav-link" data-bs-toggle="tab">COLOR</a>
-              </li>
-              <li class="nav-item">
-                <a href="#SIZE" class="nav-link" data-bs-toggle="tab">SIZE</a>
-              </li>
-              <li class="nav-item">
-                <a href="#ANIMATE" class="nav-link" data-bs-toggle="tab">ANIMATE</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="ICON">
-                <i class="fa-solid fa-camera-retro fa-8x"></i>
-                <br>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                  <label class="form-check-label" for="flexRadioDefault1">
+
+      <div class="card" style="width: 80%; height: 35em;">
+        <div class="card-header">
+          <ul class="nav card-header-tabs" id="myTab">
+            <hr style="background-color: white; border: white solid 1px;">
+            <li class="nav-item">
+              <a href="#ICON" class="nav-link active" data-bs-toggle="tab">ICON</a>
+            </li>
+            <li class="nav-item">
+              <a href="#COLOR" class="nav-link" data-bs-toggle="tab">COLOR</a>
+            </li>
+            <li class="nav-item">
+              <a href="#SIZE" class="nav-link" data-bs-toggle="tab">SIZE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ANIMATE" class="nav-link" data-bs-toggle="tab">ANIMATE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content">
+            <div class="tab-pane fade show active text-center" id="ICON">
+              <i class="fa-solid fa-camera-retro fa-8x" style="color: blue; margin-bottom: .5em; margin-top: .5em;" id="main"></i>
+              <br>
+              <!-- <br><div class="grid text-center" style="--bs-columns: 3;">
+                          <div>Auto-column</div>
+                          <div>Auto-column</div>
+                          <div>Auto-column</div>
+                        </div> -->
+              <div class="grid">
+                <div class="form-check form-check-inline" id="buttt">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="1">
+                  <label class="form-check-label" for="flexRadioDefault1" checked>
                     camera-retro
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="2">
                   <label class="form-check-label" for="flexRadioDefault2">
                     pen-nib
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault3">
+                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="3">
                   <label for="flexRadioDefault3" class="form-check-label">
                     car
                   </label>
                 </div>
-                <br>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault4">
-                  <label for="flexRadioDefault4" class="form-check-label">
-                    car
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault5">
-                  <label for="flexRadioDefault5" class="form-check-label">
-                    pallete
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault3">
-                  <label for="flexRadioDefault3" class="form-check-label">
-                    gamepad
-                  </label>
-                </div>
               </div>
-              <div class="tab-pane fade" id="STYLE">
-                <i class="fa-brands fa-freebsd fa-5x"></i>
+              <br>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="4">
+                <label for="flexRadioDefault4" class="form-check-label">
+                  eye
+                </label>
               </div>
-              <div class="tab-pane fade" id="COLOR">
-                <i class="fa-brands fa-freebsd fa-5x"></i>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="5">
+                <label for="flexRadioDefault5" class="form-check-label">
+                  pallete
+                </label>
               </div>
-              <div class="tab-pane fade" id="SIZE">
-                <i class="fa-brands fa-freebsd fa-5x"></i>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="6">
+                <label for="flexRadioDefault3" class="form-check-label">
+                  gamepad
+                </label>
               </div>
-              <div class="tab-pane fade" id="ANIMATE">
-                <i class="fa-brands fa-freebsd fa-5x"></i>
+            </div>
+            <div class="tab-pane fade" id="COLOR">
+              <i class="fa-solid fa-camera-retro fa-8x"></i>
+              <br>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault7" checked>
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  none
+                </label>
               </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault8">
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  blue
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault9">
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  green
+                </label>
+              </div>
+              <br>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault10">
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  yellow
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault11">
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  red
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="flexRadioDefault" id="flexRadioDefault12">
+                <label for="flexRadioDefault4" class="form-check-label" checked>
+                  aqua
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="SIZE">
+              <i class="fa-solid fa-camera-retro fa-8x"></i>
+              <br>
+
+            </div>
+            <div class="tab-pane fade" id="ANIMATE">
+              <i class="fa-solid fa-camera-retro fa-8x"></i>
             </div>
           </div>
         </div>
+        <div class="card-footer" style="background-color: #183153; color: white;">
+          <p id="toBeCopied" style="display: inline; display: relative; align-items: center;">
+            <code style="user-select: all; text-decoration: none; color: white;">
+                  &lt;i class="<span style="color: blue">fa-duotone fa-camera-retro</span>" style="<span style="color: blue;">color: #1c7ed6;</span>"&gt;&lt;/i&gt;
+                </code>
+
+          </p>
+          <i class="fa-solid fa-copy" onclick="myFunction()" style="display: inline; float: right;"></i>
+
+        </div>
       </div>
     </div>
+
     <div class="g-col-6" style="display: inline-block; position: relative ;align-items: center;">
       <div class="card" style="width: 50vw; border: none; text-align: left;">
         <div class="card-body" style="padding:0em 0em 1em 0em;">
           <h6 class="card-title" style="color: #146ebe;margin: 0em 1em 1em 0em ;"><b
-              style="letter-spacing: 5px;">STYLING TOOLS</b> </h6>
-          <h4 class="card-subtitle mb-2" style="margin: 0em auto 4em 0em; color: #183153; font-weight: 800;">Style your icons to your fa-heart's
+              style="letter-spacing: 5px;">STYLING
+              TOOLS</b> </h6>
+          <h4 class="card-subtitle mb-2" style="margin: 0em auto 4em 0em; color: #183153; font-weight: 800;">Style your
+            icons to your fa-heart's
             content.</h4>
           <p class="card-text" style="font-size: 1.4em;">You know and WE know styling icons on the web can be a bit of a
             chore. That's why we fine-tuned our styling tools like a Swiss watch to make icons more malleable right out
@@ -310,7 +379,7 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin: 2em;">
             <!-- Links -->
             <h6 class=" text-uppercase fw-bold mb-4">
-            Products
+              Products
             </h6>
             <p style="margin: 1em;">
               <a href="#!" class="text-reset text-decoration-none">Changelog</a>
@@ -320,7 +389,7 @@
             </p>
             <p style="margin: 1em;">
               <a href="#!" class="text-reset text-decoration-none">Commision Icons</a>
-            </p> 
+            </p>
             <p style="margin: 1em;">
               <a href="#!" class="text-reset text-decoration-none">License</a>
             </p>
@@ -335,7 +404,7 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="margin: 2em;">
             <!-- Links -->
             <h6 class=" text-uppercase fw-bold mb-4">
-            Useful links
+              Useful links
             </h6>
             <p style="margin: 1em;">
               <a href="#!" class="text-reset text-decoration-none">Pricing</a>
