@@ -1,20 +1,17 @@
 * {
+    margin: 0;
+    padding:0 ;
     z-index: 1;
-}
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 1000;
 
-.background-img {
-    width: 100vw;
-    height: auto;
-    z-index: -1;
-    bottom: 1em;
-    /* height: 54em; */
-    display: flex;
-    /* height: 69em; */
-    position: sticky;
-    float: left;
-    overflow: hidden;
+    
+}
+body{
 
 }
+
+
 
 .orange {
     color: orange;
@@ -23,17 +20,16 @@
 
 .heading-lines {
     color: #183153;
-    margin: 2em auto auto auto;
+    margin: 0em auto 0em auto;
     background-color: white;
     display: inline-block relative;
     text-align: center;
-    font-weight: 20px;
-    width: 70%;
+    font-weight:bolder;
+    width: 75%;
     /* display: flex; */
     /* flex-wrap: wrap; */
-    height: 40em;
+    height: 54em;
     padding: 1em 1em 1em 1em;
-
 
 }
 
@@ -41,6 +37,32 @@
     width: 1em;
     height: auto;
 }
+.card-header {
+    background-color: gray;
+    color: #146EBE;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .card-header a {
+
+    display: inline-block;
+    color: #f2f2f2;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .card-header a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .card-header a.active {
+    border-bottom: 3px solid red;
+  }
 
 .h2 {
     font-weight: 100;
@@ -65,4 +87,36 @@
 
     height: auto;
     
+}
+.buttons{
+    display: flex;
+    display: inline-block;
+
+}
+.back_img2{
+    background-color: #ffd43b;
+    width: 100%;
+    height: 12em;
+}
+.footerright{
+    position: relative;
+    text-align: left;
+
+}
+.footerul{
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+}
+.g-col-6{
+    width: 40%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.bg-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.b1{
+    font-size: 1.5em;
 }
